@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Cuerpo de la pagina -->
+<head>
+    <!-- Titulo de la pagina -->
+    <title>Pies Descalzos</title>
+    <!-- configuracion del sitio web -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icono de la pagina web -->
+    <link rel="shortcut icon" href="feet_003.jpg" type="image/x-icon">
+    <!-- estilos de la pagina web -->
+    <link href="style.css" rel="stylesheet" type="text/css" media="all" />
+    <!--  Fuente de la pagina web -->
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a id="res_mayores"  onclick="mostrar_mayores()"></a>
+        <a id="ppcurso" onclick="mostrar_por_curso()"></a>
+        <a id="pgenero" onclick="mps()"></a>
+        <a id="pvulnerable" onclick="mostrar_pvulnerable()"></a>
+        <a id="p_ubicacion" onclick="mostrar_ubicacion()"></a>
+      </div>
+ 
+      <a  class= "condatos" onclick="openNav()">&#9776; Datos</a>      
+    <!-- main -->
+    <div class="container">
+        
+            <form 
+                class="forms"
+                method="post"
+            >
+                <h1>Registrar usuarios</h1>
+                <input autocomplete="off"  class="text" type="text" id="Nombre" placeholder="Nombre" 
+                <p></p>
+                <input autocomplete="off" class="text" type="text" id="Apellidos" placeholder="Apellidos" >
+                <p></p>
+                    
+
+                    <select class="curso" id="curso">
+                        <option disabled selected>Selecciona el curso</option>
+                        <option>Sexto</option>
+                        <option>Septimo</option>
+                        <option>Octavo</option>
+                        <option>Noveno</option>
+                        <option>Decimo</option>
+                        <option>Undecimo</option>
+                    </select>
+                    <p></p>
+                    <input id="edad" class="text" type="number"  placeholder="Edad" min="0" max="100">
+                    <div>
+                        <p>Sexo</p>
+                        <input type="radio" name="sexo" id="sexo" value="masculino"> masculino
+                        <input type="radio" name="sexo" id="sexo" value="femenino"> femenino
+                        <p></p>
+                    </div>
+                    <input autocomplete="off" class="text" type="text" id="Estado_Civil" placeholder="Estado civil" >
+                    <div>
+                        <p>Poblacion vulnerable</p>
+                        <input type="radio" name="pv" id="si" value="si"> Si
+                        <input type="radio" name="pv" id="no" value="no"> No
+                        <p></p>
+                    </div>
+                    <select  class="ubicacion" id="ubicacion">
+                        <option disabled selected>Seleccione su ubicacion</option>
+                        <option>La playa</option>
+                        <option>Malambo</option>
+                        <option>Barranquilla</option>
+                        <option>Galapa</option>
+                        </select>
+                        <p></p>
+                    <input id="btn1" class="btn1" onclick=show() type="submit" >
+            </form>
+
+<!-- sweet alert y .js -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="javacript.js"></script>
+</html>
